@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Anggota Kelompok</title>
+    <link rel="icon" type="image/x-icon" href="smk3.ico">
+    <style>
+        body {
+            background-color: #F8F4E5; 
+            color: #5A1A20; 
+            margin: 0; 
+            padding: 0; 
+            overflow: scroll;
+        }
+
+        /* Menghilangkan scrollbar */
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* CSS untuk kotak transparan di sekitar biodata */
+        .biodata-container {
+            background-color: rgba(255, 255, 255, 0.3); /* Warna kotak dengan transparansi */
+            border-radius: 15px; /* Sudut melengkung */
+            padding: 20px;
+            width: 60%; /* Lebar kotak */
+            margin: 20px auto; /* Tengah secara horizontal */
+            position: relative; /* Memungkinkan penggunaan posisi absolut untuk gambar */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+            text-align: center; /* Teks di tengah */
+        }
+
+        header {
+            background-color: #5A1A20;
+            padding: 20px;
+            width: 98%;
+            text-align: left;
+            justify-content: space-between;
+        }
+
+        header h1 {
+            color: #F8F4E5;
+        }
+
+        footer {
+            background-color: #5A1A20;
+            color: #F8F4E5;
+            text-align: right;
+            padding: 10px;
+            margin: 0;
+            width: 99%;
+            bottom: 0;
+            font-size: 20px;
+        }
+
+        a {
+            color: #E7425B;
+            text-decoration: none;
+            font-size: 50px;
+        }
+
+        img {
+            margin-top: 10px;
+        }
+
+        .luxury-image {
+            position: absolute; /* Mengatur posisi gambar */
+            width: 30%; /* Lebar gambar */
+            height: auto; /* Tinggi otomatis menjaga rasio aspek */
+            opacity: 0.1; /* Transparansi gambar */
+            z-index: -1; /* Mengatur agar gambar berada di belakang konten lainnya */
+        }
+
+        .luxury-image.left {
+            top: 10px; /* Jarak dari atas untuk gambar kiri */
+            left: 10px; /* Jarak dari kiri untuk gambar kiri */
+        }
+
+        .luxury-image.right {
+            bottom: 10px; /* Jarak dari bawah untuk gambar kanan */
+            right: 10px; /* Jarak dari kanan untuk gambar kanan */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div style="display: flex; align-items: center; justify-content: space-between;">
+            <h1>Daftar Anggota Kelompok</h1>
+            <a href="BioData.html">
+                <img src="logok3.png" alt="Logo" width="70px" height="70px">
+            </a>
+        </div>
+    </header>
+
+    <!-- Kotak Transparan untuk Biodata -->
+    <div class="biodata-container">
+        <img src="ku1-removebg-preview.png" alt="Kemewahan Kiri" class="luxury-image left">
+        <img src="71cu980UfuL-removebg-preview.png" alt="Kemewahan Kanan" class="luxury-image right">
+        <ul style="list-style-type: none; padding: 0;">
+            <li style="margin: 20px;">
+                <a href="anggota1.html">Biodata Ravan</a><br>
+                <img src="Screenshot 2024-09-27 195831.png" alt="Gambar Ravan" width="70" height="70">
+            </li>
+            <li style="margin: 20px;">
+                <a href="anggota2.html">Biodata Ridho</a><br>
+                <img src="Screenshot 2024-09-27 195807.png" alt="Gambar Ridho" width="70" height="70">
+            </li>
+            <li style="margin: 20px;">
+                <a href="anggota3.html">Biodata Akbar</a><br>
+                <img src="Screenshot 2024-09-27 195912.png" alt="Gambar Akbar" width="70" height="70">
+            </li>
+            <li style="margin: 20px;">
+                <a href="anggota4.html">Biodata Rian</a><br>
+                <img src="blank-profile-picture-973460_640.webp" alt="Gambar Rian" width="70" height="70">
+            </li>
+        </ul>
+    </div>
+
+    <footer>
+        &copy; 2024 Kelompok Mpil. All rights reserved.
+    </footer>
+
+    <!-- Backsound Musik -->
+    <audio id="background-music" autoplay loop>
+        <source src="Luigi Boccherini_ Minuetto (classical).mp3" type="audio/mpeg">
+    </audio>
+    <!-- Ngatur Volume Pake JavaScript -->
+    <script>
+        var audio = document.getElementById("background-music");
+        audio.volume = 0.05; // Volume is set to 5%
+    </script>
+
+</body>
+</html>
